@@ -1,0 +1,42 @@
+.profile_card{
+	border-radius: .7rem;
+}
+.mini_link{
+	font-size: .6rem;
+	display: block;
+	margin-top: .5rem;
+    cursor: pointer;
+}
+.title {
+	font-weight: 600; 
+	margin-bottom: .4rem; 
+}
+.subtitle_icon {
+	margin-right: .4rem;
+	float: left;
+
+}
+.subtitle {
+	font-weight: 300;
+	font-size: .75rem;
+	margin-bottom: .2rem;
+	
+}
+
+.icon_item {
+	display: inline-flex;
+	width: 38px;
+	height: 38px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #f8f9fe;
+	border: 1px solid #e9ecef;
+	color: blue !important;
+	margin-right: 10px;
+	padding: 10px;
+}
+.profile_social_icons {
+	display: block;
+	margin-left: 17rem;
+}

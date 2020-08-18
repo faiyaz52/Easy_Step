@@ -1,0 +1,12 @@
+
+.cert_text_xs {
+    font-size: 0.75rem !important; }
+  
+  .cert_text_sm {
+    font-size: 0.875rem !important; }
+  
+  .cert_text_lg{
+    font-size: 1.25rem !important; }
+    .pointer{
+ cursor: pointer;
+    }

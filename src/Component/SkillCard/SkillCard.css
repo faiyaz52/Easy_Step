@@ -1,0 +1,10 @@
+.skill_card{
+
+border-radius: .7rem
+}
+.skill_card_link{
+	font-size: .9rem;
+	display: block;
+	margin-top: .5rem;
+    cursor: pointer;
+}

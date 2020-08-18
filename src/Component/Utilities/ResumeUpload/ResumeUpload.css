@@ -1,0 +1,20 @@
+.resume_name {
+    font-size: 0.75rem;
+  }
+  .resume_upload {
+    border: 1px dashed #5e72e4
+    
+  }
+  .separete_upload_parent {
+    max-width: 33rem;
+    display: flex;
+    justify-content: space-between;
+  
+ 
+  }
+  .btn-sm {
+    width: 8rem;
+    height: 3.5rem;
+    background-color: #5e72e4;
+    border-radius: 5px;
+}
