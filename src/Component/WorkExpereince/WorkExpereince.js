@@ -10,19 +10,19 @@ class WorkExpereince extends React.Component{
 
     return(
         <>           
-            <Card bordered={true} style={{ width: 266 }} className=" profile_card shadow-lg border-btm p-2 m-2">
+            <Card bordered={true} style={{ width: 266 }} className=" profile_card shadow-lg border-btm p-1 m-1">
                 <Col md={24} className="">
                     <div className="border-btm mb-1">
                         <Row>
                             <Col span={21} >
-                                <div className="text-primary cert_text_sm">
+                                <div className="text-primary cert_text_lg">
                                     <div >
                                         <span>{work_exp.title}</span>
                                         
                                     </div>
                                 </div>
                             </Col>
-                            <Col span={3} className="mb-2">
+                            <Col span={3} className="mb-1">
                                 <button className="hvr_icon m-0 text-muted btn bg-transparent p-2">
                                     <ion-icon name="pencil-outline"></ion-icon>
                                 </button>
@@ -44,7 +44,7 @@ class WorkExpereince extends React.Component{
                             
                         </div>
                     </div>
-                    <div className="border-btm mb-2" >
+                    <div className="border-btm mb-1" >
                         <div className="text-primary cert_text_xs">
                             Organisation
                         </div>
@@ -56,7 +56,7 @@ class WorkExpereince extends React.Component{
                     </div>
                     <div className="border-btm mb-1">
                         <Row>
-                            <Col span={12} >
+                            <Col span={16} >
                                     <div>
                                         <div className="text-primary cert_text_xs">
                                             <span>Employment Type</span>
@@ -66,7 +66,7 @@ class WorkExpereince extends React.Component{
                                         </div>
                                     </div>
                             </Col>
-                            <Col span={12} >
+                            <Col span={8} >
                                     <div >
                                         <div className="text-primary cert_text_xs">
                                             <span> Location</span> 

@@ -91,7 +91,7 @@ class WorkExpereinceTab extends Component {
                 },
                 {
                   "id": 9,
-                  "title": "Jr.Tester",  
+                  "title": "Sr.Tester",  
                   "from_duration":"2020-05-03",  
                   "end_duration":"2020-07-03" ,  
                   "company":"TCS",
@@ -115,7 +115,7 @@ class WorkExpereinceTab extends Component {
 										{this.state.workExp.map((work_exp, index) => {
 											return (
 												
-												<Col span={6}  key={index} className="mb-2">
+												<Col span={6}  key={index} className="mb-1">
 											  	<WorkExpereince work_exp={work_exp} />
 											</Col>
 											)

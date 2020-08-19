@@ -73,7 +73,7 @@ class EducationTab extends React.Component{
                         <Row>
                             { this.state.education.map((edu)=>{
                                 return(                              
-                                <Col span={6}>
+                                <Col span={6} className="mb-1">
                                     <Education edu={edu}/>
                                 </Col>
                                 )

@@ -82,7 +82,7 @@ class ProjectsTab extends React.Component{
                         <Row>
                             {
                                 this.state.Project.map((Proj)=>(
-                                    <Col span={6}>
+                                    <Col span={6} className="mb-1">
                                         <Projects Proj={Proj}/>
                                 </Col>
                                 )

@@ -80,7 +80,7 @@ class CertificationsTab extends Component {
                             {this.state.Certification.map((cert, index) => {
                                 return (
                                     
-                                <Col span={6}  key={index}  className="mb-2">
+                                <Col span={6}  key={index}  className="mb-1">
                                     <Certifications cert={cert} />
                                 </Col>
                                 )

@@ -11,11 +11,11 @@ const ResumeUpload =()=>{
               <div> <h4 className=" resume_name m-0">Resume.docx</h4>
                 <p className=" resume_name m-0" >16 Sep, 2020 at 11:06 120kb</p></div>
             </div>
-            <div className="d-flex align-items-center  ml-2">
-              <button className={"hvr_icon m-0 text-muted btn bg-transparent"}>
+            <div className="d-flex align-items-center ml-2">
+              <button className={"hvr_icon m-0 p-2 text-muted btn bg-transparent"}>
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
-              <button className={"hvr_icon m-0 text-muted btn bg-transparent"}>
+              <button className={"hvr_icon m-0 p-2 text-muted btn bg-transparent"}>
                 <ion-icon name="cloud-download-outline"></ion-icon>
               </button>
             </div>
