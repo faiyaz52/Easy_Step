@@ -1,7 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'antd';
 import Education from './Education'
-import AddNewCard from '../Utilities/ResumeUpload/AddNewCard/AddNewCard';
+import AddCard from '../Utilities/AddCard/AddCard';
+import AddEducation from './AddEducation';
 class EducationTab extends React.Component{
 
    state={
@@ -79,7 +80,8 @@ class EducationTab extends React.Component{
                                 )
                             })}
                             <Col className="ml-1">
-                                <AddNewCard title="Add Education"/>
+                               
+                                <AddEducation/>
                             </Col>
                         </Row>
 

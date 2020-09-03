@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row,Col} from 'antd' 
 import Projects from './Projects'
-import AddNewCard from '../Utilities/ResumeUpload/AddNewCard/AddNewCard'
+import AddProjects from './AddProjects'
 class ProjectsTab extends React.Component{
  state={
     Project:[
@@ -89,7 +89,7 @@ class ProjectsTab extends React.Component{
                                 )
                             }
                             <Col span={6}>
-                                <AddNewCard title="Add Project "/>
+                                <AddProjects/>
                             </Col>
                         </Row>                  
                     </Col>

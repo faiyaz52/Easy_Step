@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import { Row, Col } from 'antd';
-import AddNewCard from '../Utilities/ResumeUpload/AddNewCard/AddNewCard';
 import WorkExpereince from './WorkExpereince';
+import AddWorkExpereince from './AddWorkExpereince';
 
 
 class WorkExpereinceTab extends Component {
@@ -123,7 +123,8 @@ class WorkExpereinceTab extends Component {
 									</>
 								
                             <Col md={6} span={6} className="mb-2 ml-1">
-                                <AddNewCard title="Add work Expereince"/>
+                             
+                                <AddWorkExpereince />
                             </Col>
                         </Row>
                     </Col>

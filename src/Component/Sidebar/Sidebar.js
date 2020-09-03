@@ -24,8 +24,8 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div style={{ width: 190 }} className="fixed-top">
-        
+      <div style={{ width: 190,marginTop:"60px" }} className="fixed-top">
+       
         <Menu
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
@@ -35,6 +35,7 @@ class Sidebar extends React.Component {
           inlineCollapsed={this.state.collapsed}
           style={{ height: 656 }}
         >
+           
             <AlignLeftOutlined  onClick={this.toggleCollapsed} style={{ fontSize: '23px', marginBottom:24,marginTop:12 }} className="ml-4"> {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}</AlignLeftOutlined  >
            
           <Menu.Item key="1" icon={<UserOutlined />}>

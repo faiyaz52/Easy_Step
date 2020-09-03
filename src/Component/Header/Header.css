@@ -1,0 +1,10 @@
+.header{
+    width: auto;
+    height: 60px;
+    position: sticky;
+}
+.title{
+    margin-left: 30px;
+    font-size: 20px;
+  padding: 10PX;
+}

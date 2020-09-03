@@ -1,17 +1,18 @@
 import React from 'react'
 import { Card,Col,Row } from 'antd';
 import Moment from 'react-moment'
+
 const Education = ({edu}) =>{
     let {institude,from_duration,end_duration,grade,Dagree,location}=edu
     return(
         <>
-            <Card bordered={true} style={{ width: 266 }} className=" profile_card shadow-lg border-btm p-1 m-1">
+            <Card bordered={true} style={{ width: 270 }} className=" profile_card shadow-sm border-btm p-1 m-1">
                 <Col md={24} className="">
                     <div className="border-btm mb-1">
                         <Row>
                             <Col span={21} >
                                 <div>
-                                    <div className="text-primary text-sm">
+                                    <div className="text-primary text-lg">
                                         <span>{institude} </span>
                                     </div>
                                 </div>
@@ -41,7 +42,7 @@ const Education = ({edu}) =>{
                     </div>
                     <div className="border-btm mb-2" >
                         <div className="text-primary cert_text_xs">
-                            Tram
+                        Duration
                         </div>
                         <div>
                             <div className="mb-1">

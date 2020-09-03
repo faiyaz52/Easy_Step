@@ -1,13 +1,12 @@
 import React from 'react'
-import { PageHeader } from 'antd';
+import './Header.css'
+import {Row,Col } from 'antd';
 const Header = () => {
     return (
         <div>
-                <PageHeader
-                    className="site-page-header shadow-lg" 
-                    title="Title"
-                    title="Easy Steps"
-                />
+            <header className=" header shadow-lg bg-white">              
+                <span className="title">Easy Step </span>                  
+            </header>
         </div>
     )
 }

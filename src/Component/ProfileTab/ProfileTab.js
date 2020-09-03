@@ -5,6 +5,7 @@ import WorkExpereinceTab from '../WorkExpereince/WorkExpereinceTab';
 import CertificationsTab from '../Certifications/CertificationsTab';
 import EducationTab from '../Education/EducationTab';
 import ProjectsTab from '../Projects/ProjectsTab';
+import Skill from '../Skill/Skill';
 const ProfileTab = () =>{
     const { TabPane } = Tabs;
 
@@ -16,7 +17,7 @@ const ProfileTab = () =>{
         <div className="card-container mt-4">
             <Tabs defaultActiveKey="1" onChange={callback}>
               <TabPane tab="Skills" key="1">
-                My
+              <Skill/>
               </TabPane>
               <TabPane tab="Certifications" key="3">
                 <CertificationsTab/>

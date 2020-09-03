@@ -1,7 +1,19 @@
 import React from 'react'
  import './ResumeUpload.css'
+ import { Popconfirm, message } from 'antd';
+import UploadResume from './UploadResume'
+
 const ResumeUpload =()=>{
 
+  function confirm(e) {
+    console.log(e);
+    message.success('Deleted your Resume');
+  }
+  
+  function cancel(e) {
+    console.log(e);
+    message.error('Not Deleted your resume');
+  }
   return(
         <>
         <div className ="separete_upload_parent">
@@ -12,14 +24,23 @@ const ResumeUpload =()=>{
                 <p className=" resume_name m-0" >16 Sep, 2020 at 11:06 120kb</p></div>
             </div>
             <div className="d-flex align-items-center ml-2">
-              <button className={"hvr_icon m-0 p-2 text-muted btn bg-transparent"}>
+             
+                            <Popconfirm
+                  title="Are you sure delete your resume?"
+                  onConfirm={confirm}
+                  onCancel={cancel}
+                  okText="Yes"
+                  cancelText="No"
+                >
+               <button className={"hvr_icon m-0 p-2 text-muted btn bg-transparent"}>
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
+            </Popconfirm>
               <button className={"hvr_icon m-0 p-2 text-muted btn bg-transparent"}>
                 <ion-icon name="cloud-download-outline"></ion-icon>
               </button>
             </div>
-            <button className="btn btn-sm btn-primary text-sm ml-2"> UPLOAD RESUME </button>
+              <UploadResume/>
           </div>
         </div>
         </>

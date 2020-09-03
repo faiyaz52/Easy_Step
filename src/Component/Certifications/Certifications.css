@@ -7,3 +7,10 @@
   
   .cert_text_lg{
     font-size: 1.25rem !important; }
+    .button{
+      height: 45px;
+      border-radius: 6px;
+      padding: 10px;
+      width: 310px;
+      margin-top: 7px;
+    }

@@ -24,3 +24,40 @@ box-shadow: none; }
 .border-btm {
   border-bottom: 1px solid rgba(50, 50, 93, 0.11);
 }
+.site-tag-plus {
+  background: #fff;
+  border-style: dashed;
+  height: 30px;
+  padding:5px;
+}
+.edit-tag {
+  user-select: none;
+  border-style: dashed;
+  height: 30px;
+  padding:5px;
+  
+}
+.tag-input {
+  width: 90px;
+  margin-right: 2px;
+  vertical-align: top;
+  height: 30px;
+  padding:5px;
+}
+.dask_upload{
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  width:220px;
+  margin-top: 10px;
+}
+.fileupload{
+      height: 40px;
+      border-radius: 6px;
+      padding: 10px;
+      width: 430px;
+      margin-top: 7px;
+      margin-left: 20px;
+}
+
+.textbox{
+  border-radius: 6px;
+}

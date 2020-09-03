@@ -2,6 +2,8 @@ import React from 'react'
 import { Card,Col,Row,Tag } from 'antd';
 import './Certifications.css'
 import Moment from 'react-moment';
+import AddCard from '../Utilities/AddCard/AddCard';
+
 class Certifications extends React.Component{
 
      render(){
@@ -11,6 +13,7 @@ class Certifications extends React.Component{
 
     return(
         <>
+       
             <Card bordered={true} style={{ width: 266 }} className=" profile_card shadow-lg border-btm p-0 m-1">
                 <Col md={24} className="">
                     <div className="border-btm mb-1"> 
@@ -32,7 +35,7 @@ class Certifications extends React.Component{
                             </Col>
                             <Col span={2} className="mb-2">
                             <button className={"hvr_icon m-0 text-muted btn bg-transparent  p-2"}>
-                                <ion-icon name="pencil-outline"></ion-icon>
+                                <ion-icon name="pencil-outline"><AddCard/></ion-icon>
                             </button>
                             </Col>
                         </Row>
