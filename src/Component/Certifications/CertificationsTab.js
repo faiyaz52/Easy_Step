@@ -7,7 +7,7 @@ import AddCertificate from './AddCertificate';
 
 const CertificationsTab =() => {
    
-  const Certification =useSelector((state)=>state.certi)
+  const Certification =useSelector((state)=>state.education.Edu)
   console.log(Certification)
         return (
             <>

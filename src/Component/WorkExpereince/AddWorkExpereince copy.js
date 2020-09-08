@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { Modal,message, Button,Card, DatePicker, Input,Form , Row, Col,} from 'antd';
+import { Modal,message, Button,Card,} from 'antd';
 import AddNewCard from '../Utilities/ResumeUpload/AddNewCard/AddNewCard';
-import './Education.css'
-import AddEduDetails from './AddEduDetails';
-class AddEducation extends React.Component {
+import AddDetails from './AddDetails';
+import Skill from '../Skill/Skill';
+
+class AddWorkExpereince extends React.Component {
   state = { visible: false };
 
     showModal = () => {
@@ -31,14 +32,15 @@ class AddEducation extends React.Component {
     
 
   render() {
-    const { RangePicker } = DatePicker;
-
+   
     return (
       <>
-        <AddNewCard openModal={this.showModal} title="Add new Education"/>
+ 
+          <AddNewCard openModal={this.showModal} title="Add work Expereince"/>
             <Modal
              width={760} 
-                title="Add Education"
+             className="shadow-lg"
+                title="Add Work Expereince"
                 visible={this.state.visible}
                 onCancel={this.handleCancel}
                 footer={[
@@ -51,7 +53,7 @@ class AddEducation extends React.Component {
                 ]}                      
                 >
                 <Card  bordered={false} >
-                  <AddEduDetails/> 
+                <AddDetails/>
                 </Card>
             </Modal>
       </>
@@ -59,4 +61,4 @@ class AddEducation extends React.Component {
   }
 }
 
-export default AddEducation
+export default AddWorkExpereince

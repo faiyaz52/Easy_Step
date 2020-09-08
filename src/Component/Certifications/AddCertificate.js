@@ -10,14 +10,11 @@ class AddCertificate extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-       visible: false ,
-      cert:"",
+      visible: false ,
+      cert_id:"",
       cert_url:"",
       cert_name:"",
       cert_issue:"",
-      cert_from:"",
-      cert_to:"",
-
     
     };
   }
@@ -37,27 +34,36 @@ class AddCertificate extends PureComponent {
     };
 
     handleOk = () => {
-        this.setState({ loading: true });
-        setTimeout(() => {
-        this.setState({ loading: false, visible: false });
-        message.success(' successfully submitted ');
-        }, 2000);
+      
     };
     
-    handleChange = (event) => {
-      this.setState({cert_id: event.target.value});
-      this.setState({cert_url: event.target.value});
-      this.setState({cert_name: event.target.value});
-      this.setState({cert_issue: event.target.value});
-      this.setState({cert_from: event.target.value});
-      this.setState({cert_to: event.target.value});
-     
-      
+    certificateId = (event) => {
+      this.setState({cert_id: event.target.value});  
+    }
+    certificateUrl = (event) => {    
+      this.setState({cert_url: event.target.value});     
+    }
+    certificateName = (event) => {    
+      this.setState({cert_name: event.target.value});  
+    }
+    certificateIssue = (event) => {    
+      this.setState({cert_issue: event.target.value});  
     }
 
     mySubmitHandler = (event) => {
-      event.preventDefault();
-    console.log(this.state.cert)
+    event.preventDefault();
+    console.log(this.state.cert_id)
+    console.log(this.state.cert_url)
+    console.log(this.state.cert_name)
+    console.log(this.state.cert_issue)
+    console.log(this.state.cert_id)
+    this.setState({ loading: true });
+    
+    setTimeout(() => {
+    this.setState({ loading: false, visible: false });
+    message.success(' successfully submitted ');
+    }, 2000);
+
     }
   render() {
     const { RangePicker } = DatePicker;
@@ -71,9 +77,7 @@ class AddCertificate extends PureComponent {
                 visible={this.state.visible}
                 onCancel={this.handleCancel}
                 footer={[
-                    <Button key="submit" type="primary" loading={this.state.loading} onClick={this.handleOk}>
-                        Save
-                    </Button>,
+                   
                 ]}  
                               
                 >
@@ -84,7 +88,7 @@ class AddCertificate extends PureComponent {
                           <Col span={12}>
                           <div>      
                           <Form.Item >
-                          Credential ID <Input  value={this.state.cert}  onChange={this.handleChange} className="button"/>
+                          Credential ID <Input  value={this.state.cert}  onChange={this.certificateId} className="button"/>
                           </Form.Item>
                             
                           </div>
@@ -92,7 +96,7 @@ class AddCertificate extends PureComponent {
                           <Col span={12}>
                           <div >      
                             <Form.Item >
-                            <span className="ml-1">Certificate URL</span> <Input  value={this.state.cert_url}  onChange={this.handleChange} className="button"/>
+                            <span className="ml-1">Certificate URL</span> <Input  value={this.state.cert_url}  onChange={this.certificateUrl} className="button"/>
                           </Form.Item>
                           </div>
                           </Col>
@@ -101,7 +105,7 @@ class AddCertificate extends PureComponent {
                           <Col span={12}>
                           <div class="floating-label">      
                           <Form.Item >
-                          Certificate Name <Input  value={this.state.cert_name}  onChange={this.handleChange} className="button"/>
+                          Certificate Name <Input  value={this.state.cert_name}  onChange={this.certificateName} className="button"/>
                           </Form.Item>
                             
                           </div>
@@ -109,7 +113,7 @@ class AddCertificate extends PureComponent {
                           <Col span={12}>
                           <div >      
                             <Form.Item >
-                            <span className="ml-1">Issued by</span> <Input  value={this.state.cert_issue}  onChange={this.handleChange} className="button"/>
+                            <span className="ml-1">Issued by</span> <Input  value={this.state.cert_issue}  onChange={this.certificateIssue} className="button"/>
                           </Form.Item>
                           </div>
                           </Col>
@@ -118,13 +122,13 @@ class AddCertificate extends PureComponent {
                         <Row>
                           <Col span={12}>
                           <Form.Item >
-                          <span className="ml-1 mt-1">Valid from</span> <DatePicker  value={this.state.cert_from}  onChange={this.handleChange} className="button"/>
+                          <span className="ml-1 mt-1">Valid from</span> <DatePicker value={this.state.date}  onChange={this.certificateDate} className="button"/>
                         </Form.Item>
                     
                           </Col>
                           <Col span={12}>
                           <Form.Item >
-                          <span className="ml-1 mt-1">Valid till </span> <DatePicker  value={this.state.cert_to}  onChange={this.handleChange} className="button"/>
+                          <span className="ml-1 mt-1">Valid till </span> <DatePicker  className="button"/>
                         </Form.Item>
                     
                           </Col>
@@ -141,9 +145,9 @@ class AddCertificate extends PureComponent {
 
                         <FileUpload title="Upload certificate Image or PDF" filetitle="Drop your file here" />
                       </div>
-                      <button>
-            A
-          </button>
+                      <Button key="submit" type="primary" loading={this.state.loading} onClick={this.mySubmitHandler}>
+                        Save
+                    </Button>,
                       </form>
                     </div>
                 </Card>

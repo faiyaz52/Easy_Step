@@ -17,7 +17,7 @@ class WorkExpereince extends React.Component{
                             <Col span={21} >
                                 <div className="text-primary cert_text_lg">
                                     <div >
-                                        <span>{work_exp.title}</span>
+                                        <span>{work_exp.role}</span>
                                         
                                     </div>
                                 </div>

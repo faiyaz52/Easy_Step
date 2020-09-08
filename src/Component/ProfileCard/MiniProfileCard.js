@@ -17,8 +17,13 @@ const MiniProfileCard = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className=" mb-2 mr-5 title text-primary">
+                                <div className=" mb-0 mr-5  text-primary">
+                                <span className="subtitle_icon ">
+                                <ion-icon name="person-outline"></ion-icon>
+                                    </span>
+                                    <span className="text">
                                     Faiyaz Alam{Profiler.name}
+                                    </span>
                                 </div>
                                 <div>
                                     <span className="subtitle_icon">

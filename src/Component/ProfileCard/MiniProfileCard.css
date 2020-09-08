@@ -38,5 +38,9 @@
 }
 .profile_social_icons {
 	display: block;
-	margin-left: 17rem;
+	margin-left: 15rem;
+}
+.profile_icon{
+	color:blue
+
 }

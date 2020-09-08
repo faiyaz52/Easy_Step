@@ -27,9 +27,9 @@ class Certifications extends React.Component{
                             </Col>
                             <Col span={10} >
                                     <div>
-                                        <div className="text-primary cert_text_sm">
+                                        <div className="text-primary tag cert_text_sm">
                                         
-                                            <span> <Tag color="success"><span>{cert.exp}</span></Tag></span>
+                                            <span > <Tag color="success" ><span className="tag">{cert.exp}</span></Tag></span>
                                         </div>
                                     </div>
                             </Col>
